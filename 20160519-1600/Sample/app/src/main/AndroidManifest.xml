@@ -1,0 +1,36 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sample.an.sample"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-sdk
+        android:minSdkVersion="15"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:name=".SampleApplication"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- Notice this tag which provides the database name -->
+        <meta-data
+            android:name="AA_DB_NAME"
+            android:value="preload.db" />
+
+        <!-- Notice this tag which provides the database version -->
+        <meta-data
+            android:name="AA_DB_VERSION"
+            android:value="1" />
+
+        <activity android:name=".KnownSourceActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

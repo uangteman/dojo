@@ -1,0 +1,9 @@
+apply plugin: 'java'
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    // Plain Green Dao
+    //compile 'org.greenrobot:greendao-generator:2.2.0'
+    // Encrypt Green Dao
+    compile 'org.greenrobot:greendao-generator-encryption:2.2.0'
+}

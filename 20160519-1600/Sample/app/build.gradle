@@ -1,0 +1,35 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        applicationId "com.sample.an.sample"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.3.0'
+    compile 'com.j256.ormlite:ormlite-core:4.48'
+    compile 'com.j256.ormlite:ormlite-android:4.48'
+    compile 'com.michaelpardo:activeandroid:3.1.0-SNAPSHOT'
+    /*Green DAO*/
+    // encryption
+    compile 'org.greenrobot:greendao-encryption:2.2.0'
+    compile 'net.zetetic:android-database-sqlcipher:3.4.0'
+    // Plain Green Dao
+//    compile 'org.greenrobot:greendao:2.2.0'
+}

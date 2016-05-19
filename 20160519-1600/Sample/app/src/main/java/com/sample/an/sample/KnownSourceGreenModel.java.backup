@@ -1,0 +1,34 @@
+package com.sample.an.sample;
+
+/**
+ * Created by cindy on 5/16/16.
+ */
+public class KnownSourceGreenModel {
+
+    private long id;
+
+    private String name;
+
+    public KnownSourceGreenModel(long id){ this.id = id;}
+
+    public KnownSourceGreenModel(long id, String name){
+        this.id = id;
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+}
