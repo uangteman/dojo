@@ -4,12 +4,15 @@ How to using Go
 ## Install Manual
 #### Download Package
 * [Download](https://golang.org/doc/install)
+
 #### Extract The Files
 * tar -C YOUR_PATH -xzf go1.7.darwin-amd64.tar.gz
+
 #### Add this script to your terminal
 * export GOROOT=YOUR_GO_PACKAGE_INSTALLER
 * export PATH=$PATH:$GOROOT/bin
 * Skip this step if you are using package installer
+
 #### Setup Project
 * export GOPATH=YOUR_PROJECT_FOLDER
 * export GOBIN=$GOPATH/bin
