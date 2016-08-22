@@ -20,6 +20,7 @@ How to using Go
 ## Build and/or Install Project
 #### Project Structure
 * Create 'src', 'pkg', and 'bin' folder in your project folder
+
 #### Run your Project
 * Add all your go source code to 'src' folder
 * Go to bin folder. Then, run 'go install YOUR_GO_MAIN_FILE
@@ -31,7 +32,3 @@ How to using Go
 * Make sure you add your own package (not main) to the file
 * import in main program like this. If you want to import from 'src/com/uangteman/util'. The import will be import 'com/uangteman/util'
 * use the function in main program like this. util.YOUR_FUNCTION()
-
-
-
-
